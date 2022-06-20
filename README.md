@@ -1,11 +1,11 @@
 # Introducción
 
-El proyecto de desarrollo de esta API ha sido desarrollada en Visual Studio y en este repositorio se encuentran los ficheros editables para que funcione su ejecución. La publicación de la API con una web service de la nube permitirá trabajar con los datos directamente en JSON.
-Esta API se integra en el proyecto [bibliotecaonline](https://github.com/antoniojturel/bibliotecaonline) cuyo entregable forma parte del curso **[Flutter y Dart](https://cftic.centrosdeformacion.empleo.madrid.org/curso-flutter-y-dart)** impartido en el Centro de Referencia Nacional de Desarrollo Informático y Comunicaciones (**[CFTIC](https://cftic.centrosdeformacion.empleo.madrid.org/)**) a través de la empresa **[CAS Training](https://cas-training.com/)**.
+El proyecto de desarrollo de esta API ha sido desarrollada en Visual Studio y en este repositorio se encuentran los ficheros editables para que funcione su ejecución. La publicación de la **[API](https://es.wikipedia.org/wiki/Interfaz_de_programaci%C3%B3n_de_aplicaciones)** en una **[web service](https://es.wikipedia.org/wiki/Servicio_web)** de la nube permitirá trabajar con los datos directamente en JSON.
+Esta API se integra en el proyecto **[bibliotecaonline](https://github.com/antoniojturel/bibliotecaonline)** cuyo entregable forma parte del curso **[Flutter y Dart](https://cftic.centrosdeformacion.empleo.madrid.org/curso-flutter-y-dart)** impartido en el Centro de Referencia Nacional de Desarrollo Informático y Comunicaciones (**[CFTIC](https://cftic.centrosdeformacion.empleo.madrid.org/)**) a través de la empresa **[CAS Training](https://cas-training.com/)**.
 
 # Objetivo y alcance
 
-Referencia al proyecto citado:[README.md](https://github.com/antoniojturel/bibliotecaonline/blob/master/README.md)
+Referencia al proyecto citado: **[README.md](https://github.com/antoniojturel/bibliotecaonline/blob/master/README.md)**
 
 # Principales ficheros editables
 
@@ -40,14 +40,14 @@ public void EliminarLibro(int num)
 
 ## ~/appsettings.json
 
-Parámetros de configuración para acceder a la base de datos en Azure
+Parámetros de configuración para acceder a la base de datos en Azure (el servidor indicado en *Source* ya no está en funcionamiento). La siguiente línea de programación habría que editarla: 
 ~~~
  "cadenahospitalazure": "Data Source=srvflutter-antonio.database.windows.net;Initial Catalog=biblioteca;Persist Security Info=True;User ID=adminsql; password=Admin123"
 ~~~
 
 ## ~/Startup.cs
 
-Comienzo de ejecución. Por ejemplo, que tome la configuración realizada en el fichero anterior y la guarde en la variable cadenaconexion:
+Comienzo de ejecución. Por ejemplo, que tome la configuración realizada en el fichero anterior y la guarde en la variable *cadenaconexion*:
 ~~~
 String cadenaconexion = Configuration.GetConnectionString("cadenahospitalazure");
 ~~~
